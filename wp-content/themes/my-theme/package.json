@@ -1,0 +1,21 @@
+{
+	"name": "my-theme",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"typecheck:watch": "tsc --noEmit --watch",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start --webpack-src-dir=resources --output-path=public",
+		"build": "wp-scripts build --webpack-src-dir=resources --output-path=public"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@wordpress/scripts": "^31.1.0",
+		"path": "^0.12.7",
+		"typescript": "^5.9.3",
+		"webpack-remove-empty-scripts": "^1.1.1"
+	}
+}

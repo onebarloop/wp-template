@@ -1,0 +1,13 @@
+{
+	"name": "froschgift/wp-template",
+	"description": "Standard template for WordPress themes",
+	"type": "wordpress-theme",
+	"autoload": {
+		"psr-4": {
+			"Classes\\": "Classes/"
+		}
+	},
+	"require-dev": {
+		"symfony/var-dumper": "^7.4"
+	}
+}

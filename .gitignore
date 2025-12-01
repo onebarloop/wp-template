@@ -1,0 +1,6 @@
+*.log
+.DS_Store
+.env
+
+# Plugins (exclude all except custom ones)
+wp-content/plugins/advanced-custom-fields/

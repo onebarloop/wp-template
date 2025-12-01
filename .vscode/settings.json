@@ -1,0 +1,30 @@
+{
+  "intelephense.stubs": [
+    "Core",
+    "standard",
+    "SPL",
+    "Reflection",
+    "date",
+    "json",
+    "mbstring",
+    "mysql",
+    "mysqli",
+    "curl",
+    "filter",
+    "hash",
+    "openssl",
+    "pcre",
+    "session",
+    "xml",
+    "xmlreader",
+    "xmlwriter",
+    "dom",
+    "SimpleXML",
+    "gd",
+    "fileinfo",
+    "zip",
+    "zlib",
+    "wordpress"
+  ],
+  "intelephense.environment.phpVersion": "8.3.28"
+}
