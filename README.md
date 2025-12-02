@@ -2,13 +2,19 @@
 
 This is a reusable WordPress development template with Docker support.
 
+## Prerequesites
+
+- Docker
+- Node v22
+- Composer
+
 ## Using as a Template for Multiple Projects
 
 When creating multiple projects from this template, each project will have **isolated volumes and containers** to prevent data overlap.
 
 ### Setup Steps:
 
-1. **Copy this template** to a new project directory
+1. **Clone this repository**
 2. **Rename `.env.example` to `.env`** and configure:
 
    - `PROJECT_NAME` - Unique name for this project (e.g., `my-client-site`)
@@ -29,7 +35,6 @@ When creating multiple projects from this template, each project will have **iso
    ```bash
    cd wp-content/themes/my-theme
    composer install
-   npm run build
    ```
 
 5. **Install NPM dependencies**
