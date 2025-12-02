@@ -1,8 +1,8 @@
 {
-	"name": "my-theme",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"name": "wp-template",
+	"description": "Standard template for WordPress themes",
+	"author": "Alexander Bayer",
+	"version": "0.0.1",
 	"scripts": {
 		"typecheck": "tsc --noEmit",
 		"typecheck:watch": "tsc --noEmit --watch",
@@ -11,8 +11,6 @@
 		"start": "wp-scripts start --webpack-src-dir=resources --output-path=public",
 		"build": "wp-scripts build --webpack-src-dir=resources --output-path=public"
 	},
-	"author": "",
-	"license": "ISC",
 	"devDependencies": {
 		"@wordpress/scripts": "^31.1.0",
 		"path": "^0.12.7",

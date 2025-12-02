@@ -21,14 +21,14 @@ class Assets
         $style_asset  = include get_theme_file_path('public/css/main.asset.php');
 
         wp_enqueue_script(
-            'my-theme',
+            'theme-template',
             get_theme_file_uri('public/js/bundle.js'),
             $script_asset['dependencies'],
             $script_asset['version'],
             true
         );
         wp_enqueue_style(
-            'my-theme',
+            'theme-template',
             get_theme_file_uri('public/css/main.css'),
             $style_asset['dependencies'],
             $style_asset['version']

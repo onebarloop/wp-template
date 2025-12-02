@@ -1,6 +1,8 @@
 {
 	"name": "froschgift/wp-template",
 	"description": "Standard template for WordPress themes",
+	"author": "Alexander Bayer",
+	"version": "0.0.1",
 	"type": "wordpress-theme",
 	"autoload": {
 		"psr-4": {
