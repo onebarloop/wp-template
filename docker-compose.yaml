@@ -33,6 +33,9 @@ services:
       WORDPRESS_DB_USER: '${MYSQL_USER}'
       WORDPRESS_DB_PASSWORD: '${MYSQL_PASSWORD}'
       WORDPRESS_DB_NAME: '${MYSQL_DATABASE}'
+      WORDPRESS_DEBUG: '1'
+      WORDPRESS_DEBUG_LOG: '1'
+      WORDPRESS_DEBUG_DISPLAY: '1'
     volumes:
       - wordpress_data:/var/www/html
       - ./wp-content/plugins:/var/www/html/wp-content/plugins

@@ -12,15 +12,20 @@ if (file_exists(plugin_dir_path(__FILE__) . 'vendor/autoload.php')) {
     return;
 }
 
-// Load Classes
-use Classes\Hello;
+// Enable Whoops for nice error pages
+if (defined('WP_DEBUG') && WP_DEBUG) {
+    $whoops = new \Whoops\Run;
+    $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+    $whoops->register();
+}
 
+// Load Classes
+$helloMessage = \Classes\Hello::sayHello();
 $initClasses = [
     \Classes\Filter::class,
     \Classes\Assets::class,
 ];
 
 foreach ($initClasses as $class) {
-    new $class();
+    new $class;
 }
-$helloMessage = Hello::sayHello();
