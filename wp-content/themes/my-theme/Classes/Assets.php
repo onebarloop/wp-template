@@ -10,7 +10,9 @@ class Assets
 {
     public function __construct()
     {
-        add_action('wp_enqueue_scripts', [$this, 'enqueue_frontend_assets']);
+        add_action('wp_enqueue_scripts', function () {
+            $this->enqueue_frontend_assets();
+        });
     }
 
     public function enqueue_frontend_assets()
