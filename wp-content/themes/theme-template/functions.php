@@ -21,10 +21,10 @@ if (defined('WP_DEBUG') && WP_DEBUG) {
 
 // Load Classes
 $helloMessage = \Classes\Hello::sayHello();
-$initClasses  = array(
+$initClasses  = [
     \Classes\Filter::class,
     \Classes\Assets::class,
-);
+];
 
 foreach ($initClasses as $class) {
     new $class();

@@ -2,10 +2,6 @@
 
 namespace Classes;
 
-if (! defined('ABSPATH')) {
-    exit;
-}
-
 class Filter
 {
     public function __construct()

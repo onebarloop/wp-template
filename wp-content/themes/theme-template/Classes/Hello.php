@@ -2,10 +2,6 @@
 
 namespace Classes;
 
-if (!defined('ABSPATH')) {
-    exit;
-}
-
 class Hello
 {
     private function __construct()

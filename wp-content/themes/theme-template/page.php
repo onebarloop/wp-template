@@ -12,14 +12,8 @@
 
     <h1><?php the_title(); ?></h1>
 
-    <?php the_content();  ?>
-
     <pre style="white-space:normal">
-        Usage of Class Hello:<br>
-        <?php echo $helloMessage; ?>
-    </pre>
-    <pre style="white-space:normal">
-        Usage of Symfony VarDumper:<br>
+        Symfony VarDumper and <i>get_defined_vars():</i> <br>
         <?php dump(get_defined_vars()) ?>
     </pre>
 

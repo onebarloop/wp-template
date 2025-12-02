@@ -2,10 +2,6 @@
 
 namespace Classes;
 
-if (! defined('ABSPATH')) {
-    exit;
-}
-
 class Assets
 {
     public function __construct()
@@ -15,7 +11,7 @@ class Assets
         });
     }
 
-    public function enqueueFrontendAssets()
+    private function enqueueFrontendAssets()
     {
         $script_asset = include get_theme_file_path('public/js/bundle.asset.php');
         $style_asset  = include get_theme_file_path('public/css/main.asset.php');
