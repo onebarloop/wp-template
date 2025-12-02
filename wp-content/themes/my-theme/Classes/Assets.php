@@ -11,11 +11,11 @@ class Assets
     public function __construct()
     {
         add_action('wp_enqueue_scripts', function () {
-            $this->enqueue_frontend_assets();
+            $this->enqueueFrontendAssets();
         });
     }
 
-    public function enqueue_frontend_assets()
+    public function enqueueFrontendAssets()
     {
         $script_asset = include get_theme_file_path('public/js/bundle.asset.php');
         $style_asset  = include get_theme_file_path('public/css/main.asset.php');

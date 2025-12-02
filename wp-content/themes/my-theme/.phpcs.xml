@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Theme Coding Standards">
+    <description>Coding standards for WordPress theme</description>
+
+    <!-- Set the standard to PSR12 -->
+    <rule ref="PSR12"/>
+
+    <!-- Show progress -->
+    <arg value="p"/>
+
+    <!-- Show sniff codes -->
+    <arg value="s"/>
+
+    <!-- Use colors -->
+    <arg name="colors"/>
+
+    <!-- Check PHP files -->
+    <arg name="extensions" value="php"/>
+
+    <!-- Exclude vendor directory -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*/public/*</exclude-pattern>
+</ruleset>

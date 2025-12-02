@@ -26,5 +26,16 @@
     "zlib",
     "wordpress"
   ],
-  "intelephense.environment.phpVersion": "8.3.28"
+  "intelephense.environment.phpVersion": "8.3.28",
+  "phpsab.snifferEnable": true,
+  "phpsab.snifferMode": "onType",
+  "phpsab.executablePathCS": "wp-content/themes/my-theme/vendor/bin/phpcs",
+  "phpsab.executablePathCBF": "wp-content/themes/my-theme/vendor/bin/phpcbf",
+  "phpsab.fixerEnable": true,
+  "phpsab.snifferShowSources": true,
+  "phpsab.standard": "wp-content/themes/my-theme/.phpcs.xml",
+  "[php]": {
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab",
+    "editor.formatOnSave": true
+  }
 }
