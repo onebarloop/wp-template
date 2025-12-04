@@ -1,7 +1,7 @@
 <?php
 
-if (! defined('ABSPATH')) {
-    exit;
+if (!defined('ABSPATH')) {
+    exit();
 }
 
 // Load Composer autoloader
@@ -10,7 +10,7 @@ if (file_exists(plugin_dir_path(__FILE__) . 'vendor/autoload.php')) {
 } else {
     wp_trigger_error(
         'Advanced Multi Block Plugin: Composer autoload file not found. Please run `composer install`.',
-        E_USER_ERROR
+        E_USER_ERROR,
     );
     return;
 }
@@ -24,10 +24,7 @@ if (defined('WP_DEBUG') && WP_DEBUG) {
 
 // Load Classes
 $helloMessage = \Classes\Hello::sayHello();
-$initClasses  = [
-    \Classes\Filter::class,
-    \Classes\Assets::class,
-];
+$initClasses = [\Classes\Filter::class, \Classes\Assets::class];
 
 foreach ($initClasses as $class) {
     new $class();

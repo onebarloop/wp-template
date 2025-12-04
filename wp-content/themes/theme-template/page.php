@@ -9,18 +9,16 @@
 </head>
 
 <body>
-
     <h1><?php the_title(); ?></h1>
-
+  
     <pre style="white-space:normal">
-        Symfony VarDumper and <i>get_defined_vars():</i> <br>
-        <?php dump(get_defined_vars()) ?>
-    </pre>
+            Symfony VarDumper and <i>get_defined_vars():</i> <br>
+            <?php dump(get_defined_vars()); ?>
+        </pre>
 
     <?php wp_link_pages(); ?>
 
     <?php wp_footer(); ?>
-
 </body>
 
 </html>

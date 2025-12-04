@@ -1,25 +1,25 @@
 {
-	"name": "froschgift/wp-template",
-	"description": "Standard template for WordPress themes",
-	"author": "Alexander Bayer",
-	"version": "0.0.1",
-	"type": "wordpress-theme",
-	"autoload": {
-		"psr-4": {
-			"Classes\\": "Classes/"
-		}
-	},
-	"require-dev": {
-		"symfony/var-dumper": "^7.4",
-		"filp/whoops": "^2.18",
-		"wp-coding-standards/wpcs": "^3.1"
-	},
-	"config": {
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
-	},
-	"scripts": {
-		"lint": "./vendor/bin/phpcs"
-	}
+    "name": "froschgift/wp-template",
+    "description": "Standard template for WordPress themes",
+    "author": "Alexander Bayer",
+    "version": "0.0.1",
+    "type": "wordpress-theme",
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "Classes/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^7.4",
+        "filp/whoops": "^2.18",
+        "wp-coding-standards/wpcs": "^3.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "lint": "./vendor/bin/phpcs"
+    }
 }

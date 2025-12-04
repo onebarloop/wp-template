@@ -16,9 +16,8 @@
 
     <!--Standard PHP Rules-->
 
-    <rule ref="PSR12">
-        <exclude name="Generic.WhiteSpace.DisallowTabIndent.TabsUsed" />
-    </rule>
+
+    <rule ref="PSR12"/>
 
     <!--WP-Rules - disabled for now-->
 
@@ -50,6 +49,6 @@
             </property>
         </properties>
     </rule>
-    -->
+-->
 
 </ruleset>
