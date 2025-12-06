@@ -1,4 +1,4 @@
-FROM wordpress:latest
+FROM wordpress:6.9.0-php8.3-apache
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
