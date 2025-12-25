@@ -1,0 +1,41 @@
+{
+    "intelephense.stubs": [
+        "Core",
+        "standard",
+        "SPL",
+        "Reflection",
+        "date",
+        "json",
+        "mbstring",
+        "mysql",
+        "mysqli",
+        "curl",
+        "filter",
+        "hash",
+        "openssl",
+        "pcre",
+        "session",
+        "xml",
+        "xmlreader",
+        "xmlwriter",
+        "dom",
+        "SimpleXML",
+        "gd",
+        "fileinfo",
+        "zip",
+        "zlib",
+        "wordpress"
+    ],
+    "intelephense.environment.phpVersion": "8.5.1",
+    "phpsab.snifferEnable": true,
+    "phpsab.snifferMode": "onType",
+    "phpsab.executablePathCS": "./vendor/bin/phpcs",
+    "phpsab.executablePathCBF": "./vendor/bin/phpcbf",
+    "phpsab.fixerEnable": true,
+    "phpsab.snifferShowSources": true,
+    "phpsab.standard": ".phpcs.xml",
+    "[php]": {
+        "editor.defaultFormatter": "valeryanm.vscode-phpsab",
+        "editor.formatOnSave": true
+    }
+}
