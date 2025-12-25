@@ -26,14 +26,14 @@
     "zlib",
     "wordpress"
   ],
-  "intelephense.environment.phpVersion": "8.3.28",
+  "intelephense.environment.phpVersion": "8.5.1",
   "phpsab.snifferEnable": true,
   "phpsab.snifferMode": "onType",
-  "phpsab.executablePathCS": "wp-content/themes/theme-template/vendor/bin/phpcs",
-  "phpsab.executablePathCBF": "wp-content/themes/theme-template/vendor/bin/phpcbf",
+  "phpsab.executablePathCS": "./wp-content/themes/theme-template/vendor/bin/phpcs",
+  "phpsab.executablePathCBF": "./wp-content/themes/theme-template/vendor/bin/phpcbf",
   "phpsab.fixerEnable": true,
   "phpsab.snifferShowSources": true,
-  "phpsab.standard": "wp-content/themes/theme-template/.phpcs.xml",
+  "phpsab.standard": "./wp-content/themes/theme-template/.phpcs.xml",
   "[php]": {
     "editor.defaultFormatter": "valeryanm.vscode-phpsab",
     "editor.formatOnSave": true
