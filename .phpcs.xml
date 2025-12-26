@@ -15,8 +15,7 @@
     <config name="minimum_supported_wp_version" value="6.6"/>
 
     <!--Standard PHP Rules-->
-
-
+    
     <rule ref="PSR12"/>
 
     <!--WP-Rules - disabled for now-->

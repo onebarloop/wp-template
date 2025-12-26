@@ -41,8 +41,8 @@ services:
       WORDPRESS_DEBUG_DISPLAY: '1'
     volumes:
       - wordpress_data:/var/www/html
-      - ./wp-content/plugins:/var/www/html/wp-content/plugins
-      - ./wp-content/themes:/var/www/html/wp-content/themes
+      - wordpress_plugins:/var/www/html/wp-content/plugins
+      - ./:/var/www/html/wp-content/themes/theme-template
     networks:
       - wp_network
   phpmyadmin:
@@ -63,5 +63,6 @@ services:
 volumes:
   db_data:
   wordpress_data:
+  wordpress_plugins:
 networks:
   wp_network:
