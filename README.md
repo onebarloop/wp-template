@@ -16,44 +16,40 @@ When creating multiple projects from this template, each project will have **iso
 
 1. **Clone this repository**
 2. **Rename `.env.example` to `.env`** and configure:
-
-   - `PROJECT_NAME` - Unique name for this project (e.g., `my-client-site`)
-   - Database credentials as needed
-   - Port numbers (if running multiple projects simultaneously):
-     - `DB_PORT` - MySQL port (default: 3306)
-     - `WP_PORT` - WordPress port (default: 8080)
-     - `PMA_PORT` - phpMyAdmin port (default: 8081)
+    - `PROJECT_NAME` - Unique name for this project (e.g., `my-client-site`)
+    - Database credentials as needed
+    - Port numbers (if running multiple projects simultaneously):
+        - `DB_PORT` - MySQL port (default: 3306)
+        - `WP_PORT` - WordPress port (default: 8080)
+        - `PMA_PORT` - phpMyAdmin port (default: 8081)
 
 3. **Start the containers:**
 
-   ```bash
-   docker compose up --build -d
-   ```
+    ```bash
+    docker compose up --build -d
+    ```
 
 4. **Install composer dependencies:**
 
-   ```bash
-   cd wp-content/themes/my-theme
-   composer install
-   ```
+    ```bash
+    composer install
+    ```
 
 5. **Install NPM dependencies**
 
-   ```bash
-   cd wp-content/themes/my-theme
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
 6. **Start dev server**
 
-   ```bash
-   cd wp-content/themes/my-theme
-   npm start
-   ```
+    ```bash
+    npm start
+    ```
 
 7. **Install Wordpress**
 
-   Go to [localhost:8080](http://localhost:8080) (or other configured port) and run the installation. After that, switch to 'my-theme'.
+    Go to [localhost:8080](http://localhost:8080) (or other configured port) and run the installation. After that, switch to 'my-theme'.
 
 ### How Volume Isolation Works
 
