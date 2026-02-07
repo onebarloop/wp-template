@@ -59,6 +59,7 @@ The `PROJECT_NAME` environment variable ensures each project gets its own:
 - Container names (e.g., `my-project_db`, `my-project_app`)
 - Network (e.g., `my-project_wp_network`)
 
+
 This means you can have multiple instances running simultaneously without any data conflicts.
 
 ### Example: Running Multiple Projects
